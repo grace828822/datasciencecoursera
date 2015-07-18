@@ -1,7 +1,7 @@
-##Usage
-#There are three function:
+#Usage
+##There are three function:
 
- 1.pollutantmean(directory, pollutant, id = 1:332)
+### 1.pollutantmean(directory, pollutant, id = 1:332)
   $source("pollutantmean.R")
   Ex: https://d396qusza40orc.cloudfront.net/rprog%2Fdoc%2Fpollutantmean-demo.html
 
