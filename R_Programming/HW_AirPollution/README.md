@@ -1,5 +1,5 @@
-#Usage
-##There are three function:
+##Usage
+###There are three function:
 
   1.pollutantmean(directory, pollutant, id = 1:332)  
     $source("pollutantmean.R")  
