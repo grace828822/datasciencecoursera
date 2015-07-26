@@ -1,0 +1,1592 @@
+names <- c("box 1", "box 2", "box 3")#
+M <- matrix(nrow = 3, ncol = 3, byrow = TRUE, data = 0)#
+curves <- M#
+curves[ , ] <- NA#
+M[2,1] <- "flow"#
+M[3,2] <- "flow"#
+curves[2,1] <- -0.8#
+curves[3,2] <- -0.8#
+plotmat(M,#
+    pos = 3,#
+    name = names,#
+    lwd = 3,#
+    box.lwd = 2,#
+    cex.txt = 1,#
+    box.size = 5/100,#
+    box.type = "rect",#
+    box.prop = 1/2,#
+    curve = curves,#
+    arr.col = "white"
+)
+M <- matrix(nrow = 2, ncol = 2, byrow = TRUE, data = 0)#
+M[1,1] <- "self"#
+M[2,2] <- "self"#
+M[1,2] <- "transfer"#
+plotmat(M,#
+    pos = 2,#
+    name = names,#
+    lwd = 2,#
+    box.lwd = 2,#
+    cex.txt = 1,#
+    box.size = 5/100,#
+    box.type = "rect",#
+    box.prop = 1/2,#
+    curve = NA,#
+)
+names <- c("A", "B", "C", "D")#
+M <- matrix(nrow = 4, ncol = 4, byrow = TRUE, data = 0)#
+M <- M + diag(4)#
+plotmat(M,#
+    pos = c(1, 2, 1),#
+    name = names,#
+    lwd = 1,#
+    box.lwd = 2,#
+    cex.txt = 0.8,#
+    box.size = 5/100,#
+    box.type = "square",#
+    box.prop = 1#
+)
+library(diagram)
+install.packages("shape")
+library(diagram)
+names <- c("1200\n Subjects","Random Assignmnet",#
+	       "Group 1","","","")#
+#
+nobj <- length(name)#
+M <- matrix(nrow=nobj ,ncol=nobj,byrow=TRUE, data=0 )#
+plotmat(M, pos=(1,1,2,2,1), name=names, lwd = l, arr.pos = 1 , curve = curves,#
+	    box.lwd = l , box.size = 8/100, box.type = "rect", box.prop = 1)
+names <- c("1200\n Subjects","Random Assignmnet",#
+	       "Group 1","Group 2","aa","bb","zz")#
+#
+nobj <- length(name)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )
+names <- c("1200\n Subjects","Random Assignmnet",#
+	       "Group 1","Group 2","aa","bb","zz")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )
+M [2,1] <- 1#
+curves <- M#
+curves [ , ] <- NA#
+curves [2,1] <- 0#
+plotmat(M, pos=(1,1,2,2,1), name=names, lwd = l, arr.pos = 1 , curve = curves,#
+	    box.lwd = l , box.size = 8/100, box.type = "rect", box.prop = 1)
+M [2,1] <- 1#
+curves <- M#
+curves [ , ] <- NA#
+curves [2,1] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = l, arr.pos = 1 , curve = curves,#
+	    box.lwd = l , box.size = 8/100, box.type = "rect", box.prop = 1)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, arr.pos = 1 , curve = curves,#
+	    box.lwd = l , box.size = 8/100, box.type = "rect", box.prop = 1)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, arr.pos = 1 , curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+M [2,1] <- 1#
+curves <- M#
+curves [ , ] <- NA#
+curves [2,1] <- 0#
+curves [3,2] <- 0#
+curves [4,2] <- 0#
+curves [5,2] <- 0#
+curves [6,4] <- 0#
+curves [7,5] <- 0#
+curves [7,6] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+curves [ , ] <- 0#
+#
+M [2,1] <- 1#
+M [2,1] <- 1#
+M [3,2] <- 0#
+M [4,2] <- 0#
+M [5,2] <- 0#
+M [6,4] <- 0#
+M [7,5] <- 0#
+M [7,6] <- 0#
+#
+curves <- M
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+curves [ , ] <- 0#
+#
+M [2,1] <- 1#
+M [2,1] <- 0#
+M [3,2] <- 0#
+M [4,2] <- 0#
+M [5,2] <- 0#
+M [6,4] <- 0#
+M [7,5] <- 0#
+M [7,6] <- 0#
+#
+curves <- M
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+M [2,1] <- 1#
+M [3,2] <- 0#
+M [4,2] <- 0#
+M [5,2] <- 0#
+M [6,4] <- 0#
+M [7,5] <- 0#
+M [7,6] <- 0#
+#
+curves <- M#
+curves [ , ] <- 0
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,2] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\n Subjects","Random Assignmnet",#
+	       "Group 1","Group 2","aa","bb","zz")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 1)
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\n Subjects","Random Assignmnet",#
+	       "Group 1","Group 2","aa","bb","zz")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 4/100, box.type = "rect", box.prop = 1)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 6/100, box.type = "rect", box.prop = 1)
+library(diagram)#
+#
+names <- c("1200\n Subjects","Random Assignmnet",#
+	       "Group 1","Group 2","aa","bb","zz")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 6/100, box.type = "rect", box.prop = 1)
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects","Treatment 1\nDrug X 325 mg","Treatment 2\nPlacebo","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 6/100, box.type = "rect", box.prop = 1)
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects","Treatment 1\nDrug X 325 mg","Treatment 2\nPlacebo","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 5/100, box.type = "rect", box.prop = 1)
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects","Treatment 1\nDrug X 325 mg","Treatment 2\nPlacebo","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+	    box.lwd = 1 , box.size = 7/100, box.type = "rect", box.prop = 1)
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects","Treatment 1\nDrug X 325 mg","Treatment 2\nPlacebo","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 7/100, box.type = "rect", box.prop = 1)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 7/100, box.type = "rect", box.prop = 0.5)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 0.5)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 7/100, box.type = "rect", box.prop = 0.5)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 1 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 0.5)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 0.5 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 8/100, box.type = "rect", box.prop = 0.5)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 0.7 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 7/100, box.type = "rect", box.prop = 0.5)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 0.7 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 7/100, box.type = "rect", box.prop = 0.6)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 0.7 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 2 , box.size = 7/100, box.type = "rect", box.prop = 0.6)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 0.7 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 10/100, box.type = "rect", box.prop = 0.6)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 0.7 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1", sub = "Completely Randomized\nDesign for Example 1a")
+?plotmat
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects","Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects","Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects","Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+curves [ , ] <- 0
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6 , arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1 , box.size = 9/100, box.type = "rect", box.prop = 0.6#
+ 	    ,main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
++ 	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
++ 	    box.lwd = 1 , box.size = 5/100, box.type = "rect", box.prop = 1)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+ 	    box.lwd = 1 , box.size = 5/100, box.type = "rect", box.prop = 1)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 1 , arr.len = 0.5, curve = curves,#
+ 	    box.lwd = 1 , box.size = 5/100, box.type = "rect", box.prop = 1)
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.7, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- " "#
+M [3,2] <- " "#
+M [4,2] <- " "#
+M [5,3] <- " "#
+M [6,4] <- " "#
+M [7,5] <- " "#
+M [7,6] <- " "#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+library(diagram)#
+#
+names <- c("1200\nSubjects","600\nMen","600\nWomen",#
+	       "Random\nAssignmnet","Random\nAssignmnet",#
+	       "Group 1\n300 Subjects","Group 2\n300 Subjects",#
+	       "Group 1\n300 Subjects","Group 2\n300 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,1] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,4] <- 1#
+M [8,5] <- 1#
+M [9,5] <- 1#
+M [10,6] <- 1#
+M [11,7] <- 1#
+M [12,8] <- 1#
+M [13,9] <- 1#
+M [14,10] <- 1#
+M [14,11] <- 1#
+M [15,12] <- 1#
+M [15,13] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,endhead = TRUE,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6, endhead = FALSE,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+?plotmat
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.3, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+box()#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")
+box()
+########## 1.The first graph#
+#install.packages("shape")#
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- ""#
+M [3,2] <- ""#
+M [4,2] <- ""#
+M [5,3] <- ""#
+M [6,4] <- ""#
+M [7,5] <- ""#
+M [7,6] <- ""#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] = ""#
+M [3,2] = ""#
+M [4,2] = ""#
+M [5,3] = ""#
+M [6,4] = ""#
+M [7,5] = ""#
+M [7,6] = ""#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- 1#
+M [3,2] <- 1#
+M [4,2] <- 1#
+M [5,3] <- 1#
+M [6,4] <- 1#
+M [7,5] <- 1#
+M [7,6] <- 1#
+#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <-1#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- ""#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data= NA )#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- ""#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0)#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- 1#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0)#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- 1#
+M [7,6] <- ""#
+curves <- M#
+curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0)#
+curves <- M#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- ""#
+curves [ , ] <- 0
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0)#
+curves <- M#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- ""#
+#curves [ , ] <- 0#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white", box.lcol = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0)#
+curves <- M#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- ""#
+#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white", box.lcol = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","600\nMen","600\nWomen",#
+	       "Random\nAssignmnet","Random\nAssignmnet",#
+	       "Group 1\n300 Subjects","Group 2\n300 Subjects",#
+	       "Group 1\n300 Subjects","Group 2\n300 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+curves <- M#
+M [2,1] <-M [3,1] <-M [4,2] <-M [5,3] <- M [6,4] <- M [7,4] <- M [8,5] <-M [9,5] <- ""#
+M [10,6] <- M [11,7] <- M [12,8] <- M [13,9] <-M [14,10] <- M [14,11] <- M [15,12] <-M [15,13] <- ""#
+#
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, #
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white", box.lcol = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+box()
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",box.lcol = "gray",shadow.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")#
+box()
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",box.lcol = "white",shadow.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")#
+box()
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",box.lcol = "gray",shadow.col = "white",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")#
+box()
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",box.lcol = "gray",shadow.col = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")#
+box()
+plotmat(M, pos=c(0), name="test",box.size = 20/100,box.type = "rect",box.prop = 0.3)
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",box.lcol = "gray",shadow.col = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")
+A <- matrix(nrow=6 ,ncol=7, byrow=TRUE, data=0)#
+plotmat(A, pos=c(1,1), name="test",box.size = 20/100,box.type = "rect",box.prop = 0.3)#
+box()
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",box.lcol = "gray",shadow.col = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")#
+#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0)#
+curves <- M#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- ""#
+#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white", box.lcol = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","600\nMen","600\nWomen",#
+	       "Random\nAssignmnet","Random\nAssignmnet",#
+	       "Group 1\n300 Subjects","Group 2\n300 Subjects",#
+	       "Group 1\n300 Subjects","Group 2\n300 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature","Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0 )#
+curves <- M#
+M [2,1] <-M [3,1] <-M [4,2] <-M [5,3] <- M [6,4] <- M [7,4] <- M [8,5] <-M [9,5] <-M [10,6] <- ""#
+M [11,7] <- M [12,8] <- M [13,9] <-M [14,10] <- M [14,11] <- M [15,12] <-M [15,13] <- ""#
+#
+plotmat(M, pos=c(1,2,2,4,4,2), name=names, lwd = 1, box.col = "white",box.lcol = "gray",shadow.col = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.2, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 2\nRandomized Block\nDesign for Example 2")#
+#
+box()
+library(diagram)#
+#
+names <- c("1200\nSubjects","Random\nAssignmnet",#
+	       "Group 1\n600 Subjects","Group 2\n600 Subjects",#
+	       "Treatment 1\nDrugX 325 mg","Treatment 2\nPlacebo",#
+	       "Compare\nDrop in\nTemperature")#
+#
+nobj <- length(names)#
+#
+M <- matrix(nrow=nobj ,ncol=nobj, byrow=TRUE, data=0)#
+curves <- M#
+M [2,1] <- M [3,2] <- M [4,2] <- M [5,3] <- M [6,4] <-M [7,5] <- M [7,6] <- ""#
+#
+plotmat(M, pos=c(1,1,2,2,1), name=names, lwd = 1, box.col = "white", box.lcol = "gray",#
+ 	    arr.pos = 0.6, arr.len = 0.5, arr.type = "triangle", curve = curves,#
+ 	    box.lwd = 1, box.size = 9/100, box.type = "rect", box.prop = 0.6,#
+ 	    main = "Figure 1\nCompletely Randomized\nDesign for Example 1a")#
+box()
+pg <- ggplot(as.data.frame.table(VADeaths), aes(x = factor(1),#
++     y = Freq, fill = Var1)) + geom_bar(width = 1) + facet_wrap(~Var2,#
++     scales = "free_y") + coord_polar(theta = "y")#
+> print(pg)
+pg <- ggplot(as.data.frame.table(VADeaths), aes(x = factor(1),#
+      y = Freq, fill = Var1)) + geom_bar(width = 1) + facet_wrap(~Var2,#
+     scales = "free_y") + coord_polar(theta = "y")#
+ print(pg)
+library(ggplot2)#
+ pg <- ggplot(as.data.frame.table(VADeaths), aes(x = factor(1),#
+      y = Freq, fill = Var1)) + geom_bar(width = 1) + facet_wrap(~Var2,#
+     scales = "free_y") + coord_polar(theta = "y")#
+ print(pg)
+ggplot(data=df[df$gender==’Male’,], #
+         aes(x=factor(1),#
+         y=Summary,#
+         fill = factor(response))) + #
+ geom_bar(width = 1) + #
+ coord_polar(theta=”y”) +#
+ xlab(‘Males’) +#
+ ylab(”) +#
+ labs(fill=’Response’)#
+#
+ggplot(data=df[df$gender==’Female’,], #
+         aes(x=factor(1),#
+         y=Summary,#
+         fill = factor(response))) + #
+ geom_bar(width = 1) + #
+ coord_polar(theta=”y”) +#
+ xlab(‘Females’) +#
+ ylab(”) +#
+ labs(fill=’Response’)
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")#
+##這部分是爬網，先從網頁版ＰＴＴ中抓下每篇文章的聯結#
+rm(data)#
+data <- list()#
+for( i in 1628:2628){#
+  url <- paste('bbs/Wanted/index', i, '.html', sep='')#
+  html <- content(GET("https://www.ptt.cc/", path = url),as = 'parsed')#
+  url.list <- xpathSApply(html, "//div[@class='title']/a[@href]", xmlAttrs)#
+  data <- rbind(data, url.list[[1]])#
+}#
+##把一些空值刪掉#
+data = Filter(function(x) x != "www.ptt.cc",data)#
+##根據每篇文章代碼進去抓作者和推文的資料#
+popu <- function(link){#
+  html <- content(GET('https://www.ptt.cc', path = data[[link]]), as = 'parsed')#
+  poster <- xpathApply(html,"//div[@class='article-metaline']/span[@class='article-meta-value']",xmlValue)[[1]]#
+  #這邊特別說明一下，因為作者這個欄位很討厭，除了ＩＤ之外還有暱稱，要把暱稱刪掉#
+  poster <- str_split_fixed(poster, "\\(",2)[,1]#
+  puller <- xpathApply(html,"//div[@class='push']/span[@class='f3 hl push-userid']",xmlValue)#
+  #這個if是排除那些沒人有推文的作者（例如我）#
+  if (length(puller) >0 ){#
+    puller <- as.data.frame(matrix(unlist(puller),nrow = length(puller),T))#
+    edgelist <- merge(poster,puller,all = TRUE)#
+    return (edgelist)#
+  }#
+}#
+##我在這個步驟卡了半天  每次抓ＩＤ和推文都很容易抓漏#
+##原本用sapply做但是遇到抓錯後面就全部錯，所以改用for回圈#
+edge = list()#
+for (l in 1:length(data)){#
+  edge <- rbind(edge, popu(l))#
+}#
+#依照推文和被推者分組，計算每個pair的數量#
+edge2 <- group_by(edge,x,V1)#
+edge2 <- summarise(edge2,weight=n())#
+#from 表示推文者 in 表示被推文的#
+edge2 <- data.frame(from = edge2$V1, to = edge2$x,weight = edge2$weight)#
+#使用igraph套件將edge list的data轉成graph 物件，這是有方向性的#
+g <- graph.data.frame(edge2,directed = TRUE)#
+#用被推文的數量“in"來決定大小#
+V(g)$size <- degree(g,mode = ("in"))/2#
+#接下來就是畫圖輸出了#
+png(filename="org_network.png", height=1080, width=1080) #
+plot(g, layout = layout.fruchterman.reingold,#
+     vertex.label=NA, #
+     edge.arrow.size = 1#
+     )#
+dev.off()
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")
+library(XML)#
+library(httr)#
+library(stringr)#
+library(igraph)#
+library(dplyr)
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")#
+##這部分是爬網，先從網頁版ＰＴＴ中抓下每篇文章的聯結#
+rm(data)#
+data <- list()#
+for( i in 1628:2628){#
+  url <- paste('bbs/Wanted/index', i, '.html', sep='')#
+  html <- content(GET("https://www.ptt.cc/", path = url),as = 'parsed')#
+  url.list <- xpathSApply(html, "//div[@class='title']/a[@href]", xmlAttrs)#
+  data <- rbind(data, url.list[[1]])#
+}#
+##把一些空值刪掉#
+data = Filter(function(x) x != "www.ptt.cc",data)#
+##根據每篇文章代碼進去抓作者和推文的資料#
+popu <- function(link){#
+  html <- content(GET('https://www.ptt.cc', path = data[[link]]), as = 'parsed')#
+  poster <- xpathApply(html,"//div[@class='article-metaline']/span[@class='article-meta-value']",xmlValue)[[1]]#
+  #這邊特別說明一下，因為作者這個欄位很討厭，除了ＩＤ之外還有暱稱，要把暱稱刪掉#
+  poster <- str_split_fixed(poster, "\\(",2)[,1]#
+  puller <- xpathApply(html,"//div[@class='push']/span[@class='f3 hl push-userid']",xmlValue)#
+  #這個if是排除那些沒人有推文的作者（例如我）#
+  if (length(puller) >0 ){#
+    puller <- as.data.frame(matrix(unlist(puller),nrow = length(puller),T))#
+    edgelist <- merge(poster,puller,all = TRUE)#
+    return (edgelist)#
+  }#
+}#
+##我在這個步驟卡了半天  每次抓ＩＤ和推文都很容易抓漏#
+##原本用sapply做但是遇到抓錯後面就全部錯，所以改用for回圈#
+edge = list()#
+for (l in 1:length(data)){#
+  edge <- rbind(edge, popu(l))#
+}#
+#依照推文和被推者分組，計算每個pair的數量#
+edge2 <- group_by(edge,x,V1)#
+edge2 <- summarise(edge2,weight=n())#
+#from 表示推文者 in 表示被推文的#
+edge2 <- data.frame(from = edge2$V1, to = edge2$x,weight = edge2$weight)#
+#使用igraph套件將edge list的data轉成graph 物件，這是有方向性的#
+g <- graph.data.frame(edge2,directed = TRUE)#
+#用被推文的數量“in"來決定大小#
+V(g)$size <- degree(g,mode = ("in"))/2#
+#接下來就是畫圖輸出了#
+png(filename="org_network.png", height=1080, width=1080) #
+plot(g, layout = layout.fruchterman.reingold,#
+     vertex.label=NA, #
+     edge.arrow.size = 1#
+     )#
+dev.off()
+install.packages("XML")
+install.packages("httr")#
+install.packages("stringr")#
+install.packages("igraph")#
+install.packages("dplyr")
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")
+R -v
+R.version
+R version
+R.version
+ls -l /Library/Frameworks/R.framework/Versions/
+version
+ls /Library/Frameworks/R.framework/Versions/
+~/Downloads/Library/Frameworks/R.framework
+~/Downloads/Library/Frameworks/R.framework/R
+packageStatus
+packageStatus()
+version()
+version
+update.packages(checkBuilt=TRUE)
+y
+version
+updateR()
+if(!require(installr)) {#
+install.packages("installr"); require(installr)}
+library(installr)
+install.packages(installr)
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")
+library()
+/Library/Frameworks/R.framework/Versions
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")
+install.packages("XML")#
+install.packages("httr")#
+install.packages("stringr")#
+install.packages("igraph")#
+install.packages("dplyr")
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")
+##這部分是爬網，先從網頁版ＰＴＴ中抓下每篇文章的聯結#
+rm(data)#
+data <- list()#
+for( i in 1628:2628){#
+  url <- paste('bbs/Wanted/index', i, '.html', sep='')#
+  html <- content(GET("https://www.ptt.cc/", path = url),as = 'parsed')#
+  url.list <- xpathSApply(html, "//div[@class='title']/a[@href]", xmlAttrs)#
+  data <- rbind(data, url.list[[1]])#
+}#
+##把一些空值刪掉#
+data = Filter(function(x) x != "www.ptt.cc",data)#
+##根據每篇文章代碼進去抓作者和推文的資料#
+popu <- function(link){#
+  html <- content(GET('https://www.ptt.cc', path = data[[link]]), as = 'parsed')#
+  poster <- xpathApply(html,"//div[@class='article-metaline']/span[@class='article-meta-value']",xmlValue)[[1]]#
+  #這邊特別說明一下，因為作者這個欄位很討厭，除了ＩＤ之外還有暱稱，要把暱稱刪掉#
+  poster <- str_split_fixed(poster, "\\(",2)[,1]#
+  puller <- xpathApply(html,"//div[@class='push']/span[@class='f3 hl push-userid']",xmlValue)#
+  #這個if是排除那些沒人有推文的作者（例如我）#
+  if (length(puller) >0 ){#
+    puller <- as.data.frame(matrix(unlist(puller),nrow = length(puller),T))#
+    edgelist <- merge(poster,puller,all = TRUE)#
+    return (edgelist)#
+  }#
+}#
+##我在這個步驟卡了半天  每次抓ＩＤ和推文都很容易抓漏#
+##原本用sapply做但是遇到抓錯後面就全部錯，所以改用for回圈#
+edge = list()#
+for (l in 1:length(data)){#
+  edge <- rbind(edge, popu(l))#
+}#
+#依照推文和被推者分組，計算每個pair的數量#
+edge2 <- group_by(edge,x,V1)#
+edge2 <- summarise(edge2,weight=n())#
+#from 表示推文者 in 表示被推文的#
+edge2 <- data.frame(from = edge2$V1, to = edge2$x,weight = edge2$weight)#
+#使用igraph套件將edge list的data轉成graph 物件，這是有方向性的#
+g <- graph.data.frame(edge2,directed = TRUE)#
+#用被推文的數量“in"來決定大小#
+V(g)$size <- degree(g,mode = ("in"))/2#
+#接下來就是畫圖輸出了#
+png(filename="org_network.png", height=1080, width=1080) #
+plot(g, layout = layout.fruchterman.reingold,#
+     vertex.label=NA, #
+     edge.arrow.size = 1#
+     )#
+dev.off()
+data <- list()#
+for( i in 1628:2628){#
+  url <- paste('bbs/Wanted/index', i, '.html', sep='')#
+  html <- content(GET("https://www.ptt.cc/", path = url),as = 'parsed')#
+  url.list <- xpathSApply(html, "//div[@class='title']/a[@href]", xmlAttrs)#
+  data <- rbind(data, url.list[[1]])#
+}#
+##把一些空值刪掉#
+data = Filter(function(x) x != "www.ptt.cc",data)#
+##根據每篇文章代碼進去抓作者和推文的資料#
+popu <- function(link){#
+  html <- content(GET('https://www.ptt.cc', path = data[[link]]), as = 'parsed')#
+  poster <- xpathApply(html,"//div[@class='article-metaline']/span[@class='article-meta-value']",xmlValue)[[1]]#
+  #這邊特別說明一下，因為作者這個欄位很討厭，除了ＩＤ之外還有暱稱，要把暱稱刪掉#
+  poster <- str_split_fixed(poster, "\\(",2)[,1]#
+  puller <- xpathApply(html,"//div[@class='push']/span[@class='f3 hl push-userid']",xmlValue)#
+  #這個if是排除那些沒人有推文的作者（例如我）#
+  if (length(puller) >0 ){#
+    puller <- as.data.frame(matrix(unlist(puller),nrow = length(puller),T))#
+    edgelist <- merge(poster,puller,all = TRUE)#
+    return (edgelist)#
+  }#
+}#
+##我在這個步驟卡了半天  每次抓ＩＤ和推文都很容易抓漏#
+##原本用sapply做但是遇到抓錯後面就全部錯，所以改用for回圈#
+edge = list()#
+for (l in 1:length(data)){#
+  edge <- rbind(edge, popu(l))#
+}#
+#依照推文和被推者分組，計算每個pair的數量#
+edge2 <- group_by(edge,x,V1)#
+edge2 <- summarise(edge2,weight=n())#
+#from 表示推文者 in 表示被推文的#
+edge2 <- data.frame(from = edge2$V1, to = edge2$x,weight = edge2$weight)#
+#使用igraph套件將edge list的data轉成graph 物件，這是有方向性的#
+g <- graph.data.frame(edge2,directed = TRUE)#
+#用被推文的數量“in"來決定大小#
+V(g)$size <- degree(g,mode = ("in"))/2#
+#接下來就是畫圖輸出了#
+png(filename="org_network.png", height=1080, width=1080) #
+plot(g, layout = layout.fruchterman.reingold,#
+     vertex.label=NA, #
+     edge.arrow.size = 1#
+     )#
+dev.off()
+##這部分是爬網，先從網頁版ＰＴＴ中抓下每篇文章的聯結#
+rm(data)#
+data <- list()#
+for( i in 1628:2628){#
+  url <- paste('bbs/Wanted/index', i, '.html', sep='')#
+  html <- content(GET("https://www.ptt.cc/", path = url),as = 'parsed')#
+  url.list <- xpathSApply(html, "//div[@class='title']/a[@href]", xmlAttrs)#
+  data <- rbind(data, url.list[[1]])#
+}#
+##把一些空值刪掉#
+data = Filter(function(x) x != "www.ptt.cc",data)#
+##根據每篇文章代碼進去抓作者和推文的資料#
+popu <- function(link){#
+  html <- content(GET('https://www.ptt.cc', path = data[[link]]), as = 'parsed')#
+  poster <- xpathApply(html,"//div[@class='article-metaline']/span[@class='article-meta-value']",xmlValue)[[1]]#
+  #這邊特別說明一下，因為作者這個欄位很討厭，除了ＩＤ之外還有暱稱，要把暱稱刪掉#
+  poster <- str_split_fixed(poster, "\\(",2)[,1]#
+  puller <- xpathApply(html,"//div[@class='push']/span[@class='f3 hl push-userid']",xmlValue)#
+  #這個if是排除那些沒人有推文的作者（例如我）#
+  if (length(puller) >0 ){#
+    puller <- as.data.frame(matrix(unlist(puller),nrow = length(puller),T))#
+    edgelist <- merge(poster,puller,all = TRUE)#
+    return (edgelist)#
+  }#
+}#
+##我在這個步驟卡了半天  每次抓ＩＤ和推文都很容易抓漏#
+##原本用sapply做但是遇到抓錯後面就全部錯，所以改用for回圈#
+edge = list()#
+for (l in 1:length(data)){#
+  edge <- rbind(edge, popu(l))#
+}#
+#依照推文和被推者分組，計算每個pair的數量#
+edge2 <- group_by(edge,x,V1)#
+edge2 <- summarise(edge2,weight=n())#
+#from 表示推文者 in 表示被推文的#
+edge2 <- data.frame(from = edge2$V1, to = edge2$x,weight = edge2$weight)#
+#使用igraph套件將edge list的data轉成graph 物件，這是有方向性的#
+g <- graph.data.frame(edge2,directed = TRUE)#
+#用被推文的數量“in"來決定大小#
+V(g)$size <- degree(g,mode = ("in"))/2#
+#接下來就是畫圖輸出了#
+png(filename="org_network.png", height=1080, width=1080) #
+plot(g, layout = layout.fruchterman.reingold,#
+     vertex.label=NA, #
+     edge.arrow.size = 1#
+     )
+install.packages("XML")#
+install.packages("httr")#
+install.packages("stringr")#
+install.packages("igraph")#
+install.packages("dplyr")#
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")#
+##這部分是爬網，先從網頁版ＰＴＴ中抓下每篇文章的聯結#
+rm(data)#
+data <- list()#
+for( i in 1628:2628){#
+  url <- paste('bbs/Wanted/index', i, '.html', sep='')#
+  html <- content(GET("https://www.ptt.cc/", path = url),as = 'parsed')#
+  url.list <- xpathSApply(html, "//div[@class='title']/a[@href]", xmlAttrs)#
+  data <- rbind(data, url.list[[1]])#
+}#
+##把一些空值刪掉#
+data = Filter(function(x) x != "www.ptt.cc",data)#
+##根據每篇文章代碼進去抓作者和推文的資料#
+popu <- function(link){#
+  html <- content(GET('https://www.ptt.cc', path = data[[link]]), as = 'parsed')#
+  poster <- xpathApply(html,"//div[@class='article-metaline']/span[@class='article-meta-value']",xmlValue)[[1]]#
+  #這邊特別說明一下，因為作者這個欄位很討厭，除了ＩＤ之外還有暱稱，要把暱稱刪掉#
+  poster <- str_split_fixed(poster, "\\(",2)[,1]#
+  puller <- xpathApply(html,"//div[@class='push']/span[@class='f3 hl push-userid']",xmlValue)#
+  #這個if是排除那些沒人有推文的作者（例如我）#
+  if (length(puller) >0 ){#
+    puller <- as.data.frame(matrix(unlist(puller),nrow = length(puller),T))#
+    edgelist <- merge(poster,puller,all = TRUE)#
+    return (edgelist)#
+  }#
+}#
+##我在這個步驟卡了半天  每次抓ＩＤ和推文都很容易抓漏#
+##原本用sapply做但是遇到抓錯後面就全部錯，所以改用for回圈#
+edge = list()#
+for (l in 1:length(data)){#
+  edge <- rbind(edge, popu(l))#
+}#
+#依照推文和被推者分組，計算每個pair的數量#
+edge2 <- group_by(edge,x,V1)#
+edge2 <- summarise(edge2,weight=n())#
+#from 表示推文者 in 表示被推文的#
+edge2 <- data.frame(from = edge2$V1, to = edge2$x,weight = edge2$weight)#
+#使用igraph套件將edge list的data轉成graph 物件，這是有方向性的#
+g <- graph.data.frame(edge2,directed = TRUE)#
+#用被推文的數量“in"來決定大小#
+V(g)$size <- degree(g,mode = ("in"))/2#
+#接下來就是畫圖輸出了#
+png(filename="org_network.png", height=1080, width=1080) #
+plot(g, layout = layout.fruchterman.reingold,#
+     vertex.label=NA, #
+     edge.arrow.size = 1#
+     )#
+dev.off()
+library("XML")#
+library("httr")#
+library("stringr")#
+library("igraph")#
+library("dplyr")#
+##[爬網]先從網頁版ＰＴＴ中的八卦版抓下每篇文章的聯結#
+rm(data)#
+data <- list()#
+for( i in 1628:2628){#
+  url <- paste('bbs/Gossiping/index', i, '.html', sep='')#
+  html <- content(GET("https://www.ptt.cc/", path = url),as = 'parsed')#
+  url.list <- xpathSApply(html, "//div[@class='title']/a[@href]", xmlAttrs)#
+  data <- rbind(data, url.list[[1]])#
+}#
+##把一些空值刪掉#
+data = Filter(function(x) x != "www.ptt.cc",data)#
+##根據每篇文章代碼進去抓作者和推文的資料#
+popu <- function(link){#
+  html <- content(GET('https://www.ptt.cc', path = data[[link]]), as = 'parsed')#
+  poster <- xpathApply(html,"//div[@class='article-metaline']/span[@class='article-meta-value']",xmlValue)[[1]]#
+  #這邊特別說明一下，因為作者這個欄位很討厭，除了ＩＤ之外還有暱稱，要把暱稱刪掉#
+  poster <- str_split_fixed(poster, "\\(",2)[,1]#
+  puller <- xpathApply(html,"//div[@class='push']/span[@class='f3 hl push-userid']",xmlValue)#
+  #這個if是排除那些沒人有推文的作者（例如我）#
+  if (length(puller) >0 ){#
+    puller <- as.data.frame(matrix(unlist(puller),nrow = length(puller),T))#
+    edgelist <- merge(poster,puller,all = TRUE)#
+    return (edgelist)#
+  }#
+}#
+##我在這個步驟卡了半天  每次抓ＩＤ和推文都很容易抓漏#
+##原本用sapply做但是遇到抓錯後面就全部錯，所以改用for回圈#
+edge = list()#
+for (l in 1:length(data)){#
+  edge <- rbind(edge, popu(l))#
+}#
+#依照推文和被推者分組，計算每個pair的數量#
+edge2 <- group_by(edge,x,V1)#
+edge2 <- summarise(edge2,weight=n())#
+#from 表示推文者 in 表示被推文的#
+edge2 <- data.frame(from = edge2$V1, to = edge2$x,weight = edge2$weight)#
+#使用igraph套件將edge list的data轉成graph 物件，這是有方向性的#
+g <- graph.data.frame(edge2,directed = TRUE)#
+#用被推文的數量“in"來決定大小#
+V(g)$size <- degree(g,mode = ("in"))/2#
+#接下來就是畫圖輸出了#
+png(filename="org_network.png", height=1080, width=1080) #
+plot(g, layout = layout.fruchterman.reingold,#
+     vertex.label=NA, #
+     edge.arrow.size = 1#
+     )#
+dev.off()
+install.packages("swirl")
+library("swirl")
+swirl()
+setwd("/Users/bor-shyangsheu/Developer/datasciencecoursera/2_Get&CleanData/Project")
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"#
+download.file(fileUrl, destfile="./Dataset.zip", method = "curl")
+download.file(fileUrl, destfile="./Dataset.zip", method = "curl")#
+unzip("Dataset.zip")
+unzip("Dataset.zip")
+es%2FUCI%20HAR%20Dataset.zip"
+download.file(fileUrl, destfile="./Dataset.zip", method = "curl")
+unzip("Dataset.zip")
+setwd("/Users/bor-shyangsheu/Developer/datasciencecoursera/2_Get&CleanData/Project")
+tmp1 <- read.table("train/X_train.txt")
+tmp1 <- read.table("Dataset/train/X_train.txt")#
+tmp2 <- read.table("Dataset/test/X_test.txt")#
+X <- rbind(tmp1, tmp2)
+head(tmp1)
+head(x)
+head(X)
+tmp1 <- read.table("Dataset/train/subject_train.txt")#
+tmp2 <- read.table("Dataset/test/subject_test.txt")#
+S <- rbind(tmp1, tmp2)#
+#
+tmp1 <- read.table("Dataset/train/y_train.txt")#
+tmp2 <- read.table("Dataset/test/y_test.txt")#
+Y <- rbind(tmp1, tmp2)
+head(S)
+head(Y)
+head(tmp1)
+tail(tmp1)
+features <- read.table("Dataset/features.txt")
+indices_of_good_features <- grep("-mean\\(\\)|-std\\(\\)", features[, 2])
+head(indices_of_good_features)
+?grep
+features[, 2]
+indices_of_good_features
+X <- X[, indices_of_good_features]
+names(X)
+names(X) <- features[indices_of_good_features, 2]
+names(X)
+head(X)
+names(X) <- gsub("\\(|\\)", "", names(X))
+names(X)
+names(X) <- tolower(names(X))
+names(X)
+activities <- read.table("Dataset/activity_labels.txt")
+head(activities)
+tail(activities)
+sum(activities)
+nrows(activities)
+nrow(activities)
+activities[, 2] = gsub("_", "", tolower(as.character(activities[, 2])))
+head(Y)
+Y[,1] = activities[Y[,1], 2]
+head(Y)
+names(S) <- "subject"
+head(S)
+cleanedData <- cbind(S, Y, X)
+write.table(cleanedData, "merged_clean_data.txt")
+uniqueSubjects = unique(S)[,1]#
+numSubjects = length(unique(S)[,1])#
+numActivities = length(activities[,1])#
+numCols = dim(cleaned)[2]#
+result = cleaned[1:(numSubjects*numActivities), ]
+numCols = dim(cleanedData)[2]#
+result = cleanedData[1:(numSubjects*numActivities), ]
+uniqueSubjects
+numSubjects
+numActivities
+nrow(S)
+nrow(activities)
+dim(cleanedData)[2]
+?dim
+numSubjects*numActivities
+result = cleaned[1:(numSubjects*numActivities), ]
+result = cleanedData[1:(numSubjects*numActivities), ]
+head(result)
+ncol(result)
+numCols = dim(cleanedData)[2]
+numCols
+nrow(cleanedData)
+nrow(result)
+result[row, 1]
+head(result)
+result[1,1]
+row=1
+uniqueSubjects[1]
+row = 1#
+for (s in 1:numSubjects) {#
+    for (a in 1:numActivities) {#
+        result[row, 1] = uniqueSubjects[s]#
+        result[row, 2] = activities[a, 2]#
+        tmp <- cleanedData[cleanedData$subject==s & cleanedData$activity==activities[a, 2], ]#
+        result[row, 3:numColumns] <- colMeans(tmp[, 3:numColumns])#
+        row = row+1#
+    }#
+}
+numColumns = dim(cleanedData)[2]
+row = 1#
+for (s in 1:numSubjects) {#
+    for (a in 1:numActivities) {#
+        result[row, 1] = uniqueSubjects[s]#
+        result[row, 2] = activities[a, 2]#
+        tmp <- cleanedData[cleanedData$subject==s & cleanedData$activity==activities[a, 2], ]#
+        result[row, 3:numColumns] <- colMeans(tmp[, 3:numColumns])#
+        row = row+1#
+    }#
+}
+head(result)
+numObserved= nrow(cleanedData)#
+#
+for (row in 1:numObserved)#
+	for (s in 1:numSubjects) {#
+    	for (a in 1:numActivities) {#
+        	result[row, 1] = uniqueSubjects[s]#
+        	result[row, 2] = activities[a, 2]#
+    	    tmp <- cleanedData[cleanedData$subject==s & cleanedData$activity==activities[a, 2], ]#
+    	    result[row, 3:numColumns] <- colMeans(tmp[, 3:numColumns])#
+    	}#
+    }#
+}
+}
+numObserved= nrow(cleanedData)#
+#
+for (row in 1:numObserved){#
+	for (s in 1:numSubjects) {#
+    	for (a in 1:numActivities) {#
+        	result[row, 1] = uniqueSubjects[s]#
+        	result[row, 2] = activities[a, 2]#
+    	    tmp <- cleanedData[cleanedData$subject==s & cleanedData$activity==activities[a, 2], ]#
+    	    result[row, 3:numColumns] <- colMeans(tmp[, 3:numColumns])#
+    	}#
+    }#
+}
+head(result)
+row=1#
+	for (s in 1:numSubjects) {#
+    	for (a in 1:numActivities) {#
+        	result[row, 1] = uniqueSubjects[s]#
+        	result[row, 2] = activities[a, 2]#
+    	    tmp <- cleanedData[cleanedData$subject==s & cleanedData$activity==activities[a, 2], ]#
+    	    result[row, 3:numColumns] <- colMeans(tmp[, 3:numColumns])#
+    	    row= row +1#
+    	}#
+    }
+head(result)
+tail(result)
+uniqueSubjects = unique(S)[,1]#
+numSubjects = length(unique(S)[,1])#
+numActivities = length(activities[,1])#
+numCols = dim(cleaned)[2]#
+result = cleaned[1:(numSubjects*numActivities), ]#
+#
+row = 1#
+for (s in 1:numSubjects) {#
+    for (a in 1:numActivities) {#
+        result[row, 1] = uniqueSubjects[s]#
+        result[row, 2] = activities[a, 2]#
+        tmp <- cleaned[cleaned$subject==s & cleaned$activity==activities[a, 2], ]#
+        result[row, 3:numCols] <- colMeans(tmp[, 3:numCols])#
+        row = row+1#
+    }#
+}
+cleaned <- cbind(S, Y, X)
+uniqueSubjects = unique(S)[,1]#
+numSubjects = length(unique(S)[,1])#
+numActivities = length(activities[,1])#
+numCols = dim(cleaned)[2]#
+result = cleaned[1:(numSubjects*numActivities), ]#
+#
+row = 1#
+for (s in 1:numSubjects) {#
+    for (a in 1:numActivities) {#
+        result[row, 1] = uniqueSubjects[s]#
+        result[row, 2] = activities[a, 2]#
+        tmp <- cleaned[cleaned$subject==s & cleaned$activity==activities[a, 2], ]#
+        result[row, 3:numCols] <- colMeans(tmp[, 3:numCols])#
+        row = row+1#
+    }#
+}
+head(result)
+result[row, 1] = uniqueSubjects[1]
+result[row, 2] = activities[1, 2]
+tmp <- cleaned[cleaned$subject==1 & cleaned$activity==activities[1, 2], ]
+head(tmp)
+head(cleaned,1)
+tmp1 <- cleaned[cleaned$subject==1]
+tmp1 <- cleaned[cleaned$subject==1,]
+head(tmp1,2)
+tmp1 <- cleaned[cleaned$activity==activities[1, 2],]
+head(tmp1,2)
+names(cleanedData)
+names(Y) <- "activity"
+cleanedData <- cbind(S, Y, X)
+names(cleanedData)
+row=1#
+	for (s in 1:numSubjects) {#
+    	for (a in 1:numActivities) {#
+        	result[row, 1] = uniqueSubjects[s]#
+        	result[row, 2] = activities[a, 2]#
+    	    tmp <- cleanedData[cleanedData$subject==s & cleanedData$activity==activities[a, 2], ]#
+    	    result[row, 3:numColumns] <- colMeans(tmp[, 3:numColumns])#
+    	    row= row +1#
+    	}#
+    }
+head(result)
+nrow(result)
+write.table(result, "DatasSet_with_the_averages.txt")
+write.table(result, "Result_AverageDataSet.txt")
