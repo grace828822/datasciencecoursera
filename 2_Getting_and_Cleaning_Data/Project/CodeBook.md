@@ -5,7 +5,7 @@ Source of the original data: https://d396qusza40orc.cloudfront.net/getdata%2Fpro
 
 Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-The attached R script (run_analysis.R) performs the following to clean up the data:
+The attached R script ([run_analysis.R](https://github.com/grace828822/datasciencecoursera/blob/master/2_Getting_and_Cleaning_Data/Project/run_analysis.R) ) performs the following to clean up the data:
 
  1. Merges the training and test sets to create one data set 
     *  train/X_train.txt with test/X_test.txt, the result of which is a 10299x561 data frame, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561")
