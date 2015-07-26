@@ -7,21 +7,21 @@ unzip("Dataset.zip")
 
 
 #2) [ Step 1 ] Merges the training and the test sets to create one data set.
-tmp1 <- read.table("Dataset/train/X_train.txt")
-tmp2 <- read.table("Dataset/test/X_test.txt")
+tmp1 <- read.table("UCI HAR Dataset/train/X_train.txt")
+tmp2 <- read.table("UCI HAR Dataset/test/X_test.txt")
 X <- rbind(tmp1, tmp2)
 
-tmp1 <- read.table("Dataset/train/subject_train.txt")
-tmp2 <- read.table("Dataset/test/subject_test.txt")
+tmp1 <- read.table("UCI HAR Dataset/train/subject_train.txt")
+tmp2 <- read.table("UCI HAR Dataset/test/subject_test.txt")
 S <- rbind(tmp1, tmp2)
 
-tmp1 <- read.table("Dataset/train/y_train.txt")
-tmp2 <- read.table("Dataset/test/y_test.txt")
+tmp1 <- read.table("UCI HAR Dataset/train/y_train.txt")
+tmp2 <- read.table("UCI HAR Dataset/test/y_test.txt")
 Y <- rbind(tmp1, tmp2)
 
 
 #3) [ Step 2 ] Extracts only the measurements on the mean and standard deviation for each measurement. 
-features <- read.table("Dataset/features.txt")
+features <- read.table("UCI HAR Dataset/features.txt")
 indices_of_good_features <- grep("-mean\\(\\)|-std\\(\\)", features[, 2]) #extract the word has mean or std in it
 X <- X[, indices_of_good_features] 					#select the columns that we need by indices_of_good_features(only select the mean and std columns)
 names(X) <- features[indices_of_good_features, 2] 	#rename the title of columns
@@ -30,7 +30,7 @@ names(X) <- tolower(names(X))						#transform all char to lower cases
 
 
 #4) [ Step 3 ] Uses descriptive activity names to name the activities in the data set
-activities <- read.table("Dataset/activity_labels.txt")
+activities <- read.table("UCI HAR Dataset/activity_labels.txt")
 activities[, 2] = gsub("_", "", tolower(as.character(activities[, 2]))) # subtitue and tramsform all char to lower cases
 Y[,1] = activities[Y[,1], 2]		#replace the number by the true meaning
 names(Y) <- "activity"				#rename the column title
