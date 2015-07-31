@@ -18,5 +18,10 @@ g + geom_line(stat = "summary", fun.y="sum") + ylab("Total Particle Emission") +
 dev.off()
 
 #================= box plot
-ggplot(data = MD, aes(x = year, y = log(Emissions))) + facet_grid(. ~ type) + guides(fill = F) + geom_boxplot(aes(fill = type)) + stat_boxplot(geom = 'errorbar') + ylab(expression(paste('Log', ' of PM'[2.5], ' Emissions'))) + xlab('Year') + ggtitle('Emissions per Type in Baltimore City, Maryland') + geom_jitter(alpha = 0.10)
+ggplot(data = MarylandData, aes(x = year, y = log(Emissions))) + facet_grid(. ~ type) + guides(fill = F) + geom_boxplot(aes(fill = type)) + stat_boxplot(geom = 'errorbar') + ylab(expression(paste('Log', ' of PM'[2.5], ' Emissions'))) + xlab('Year') + ggtitle('Emissions per Type in Baltimore City, Maryland') + geom_jitter(alpha = 0.10)
+dev.off()
+
+#================= bar plot 
+png('plot3.png', width = 400, height = 400)
+ggplot(MarylandData,aes(factor(year),Emissions, color = type)) + geom_bar(stat="identity") + facet_grid(.~type,scales = "free",space="free") + labs(x="Year", y=expression("Total PM"[2.5]*" Emission")) + labs(title=expression("PM"[2.5]*" Emissions in Baltimore 1999,2002,2005,2008 by Type"))
 dev.off()
