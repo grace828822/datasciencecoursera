@@ -1,6 +1,6 @@
 ## Hospital Quality Analysis
 
-1.Detailed Instructions  
+1. Detailed Instructions  
 Please download this document for detailed instructions about the assignment:
 (Programming Instructions)[https://d396qusza40orc.cloudfront.net/rprog%2Fdoc%2FProgAssignment3.pdf]
 
